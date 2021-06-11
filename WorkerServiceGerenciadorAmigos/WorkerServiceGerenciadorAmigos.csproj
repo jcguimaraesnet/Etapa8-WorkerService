@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>dotnet-WorkerServiceGerenciadorAmigos-A27F431E-8E35-4542-ADB5-75231C1C0DC5</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="3.1.14" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Dominio\Dominio.csproj" />
+    <ProjectReference Include="..\Infraestrutura\Infraestrutura.csproj" />
+  </ItemGroup>
+</Project>
