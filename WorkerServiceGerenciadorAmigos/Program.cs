@@ -21,7 +21,7 @@ namespace WorkerServiceGerenciadorAmigos
             return Host.CreateDefaultBuilder(args)
                 .ConfigureServices((hostContext, services) =>
                 {
-                    services.AddScoped<IAmigoRepositorio>(x => new AmigoDictionaryRepositorio());
+                    services.AddSingleton<IAmigoRepositorio>(x => new AmigoDictionaryRepositorio());
                     services.AddHostedService<Worker>();
                 });
 
